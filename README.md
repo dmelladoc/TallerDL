@@ -92,3 +92,19 @@ y eliminar del `pyproject.toml` la librería `pytorch-triton-xpu<=3.5.0`.
 ## Descarga de datasets
 
 para descargar los datasets, deberan ejecutar el script `load_databases.py`.
+
+```sh
+#utilizando uv
+uv run load_databases.py --dataset [dataset] -o datasets/
+
+#utilizando python directo
+python load_databases.py --dataset [dataset] -o datasets/
+```
+
+donde:
+
+- `--dataset` por defecto `all` (descarga todos) o `cats-vs-dogs`, `medmnist`, `fishes`.
+- `-o`, `--output_dir` por defecto `datasets/`, o pueden definir la carpeta a instalar.
+
+**NOTA**: Para descargar datasets desde Kaggle, requieren obtener una llave API desde su cuenta.
+Esta llave deben ingresarla cuando se solicite el programa.
