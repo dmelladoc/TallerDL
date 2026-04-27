@@ -50,9 +50,18 @@ Ahora, si utilizan `anaconda` u otro gestor, deben instalar los siguientes paque
 - `medmnist`
 - `kagglehub`
 
-**NOTA**: El `pyproject.toml` deben ajustarle la librería para que cargue las versiones con `CUDA`. Deberan reemplazar la parte de:
+Se deja disponible tambien un `requirements.txt` con las librerías, para su instalación con `pip`.
 
 ```sh
+pip install -r requirements.txt
+```
+
+### Uso de CUDA en este proyecto
+
+Dentro del `pyproject.toml` deben ajustar la ruta para que cargue las versiones con `CUDA`. Pues por defecto, está para `xpu`.
+Deberan reemplazar la parte de:
+
+```toml
 [tool.uv.sources]
 torch = [
     { index = "pytorch-xpu" },
@@ -72,7 +81,7 @@ explicit = true
 
 con el siguiente extracto:
 
-```sh
+```toml
 [tool.uv.sources]
 torch = [
     { index = "pytorch-cu130" },
