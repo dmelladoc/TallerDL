@@ -1313,6 +1313,7 @@ dependencies = [
     { name = "pytorch-triton-xpu" },
     { name = "scikit-learn" },
     { name = "torch" },
+    { name = "torchinfo" },
     { name = "torchmetrics" },
     { name = "torchvision" },
     { name = "tqdm" },
@@ -1335,6 +1336,7 @@ requires-dist = [
     { name = "pytorch-triton-xpu", specifier = "<=3.5.0", index = "https://download.pytorch.org/whl/xpu" },
     { name = "scikit-learn", specifier = ">=1.8.0" },
     { name = "torch", specifier = "<=2.11.0", index = "https://download.pytorch.org/whl/xpu" },
+    { name = "torchinfo", specifier = ">=1.8.0" },
     { name = "torchmetrics", specifier = ">=1.9.0" },
     { name = "torchvision", specifier = "==0.24.0", index = "https://download.pytorch.org/whl/xpu" },
     { name = "tqdm", specifier = ">=4.67.3" },
@@ -1437,6 +1439,15 @@ wheels = [
     { url = "https://download-r2.pytorch.org/whl/xpu/torch-2.9.0%2Bxpu-cp314-cp314-win_amd64.whl", hash = "sha256:e237b36dc3907135ccaa9716f7c40984ba80161c5e80b9ad1a52bd01c141b77c", upload-time = "2025-10-14T17:43:56Z" },
     { url = "https://download-r2.pytorch.org/whl/xpu/torch-2.9.0%2Bxpu-cp314-cp314t-linux_x86_64.whl", hash = "sha256:4ad7c4c3c1dc8d878a86e8c0fc25974f67c217736d888faf40cc3f36c271f851", upload-time = "2025-10-14T17:44:05Z" },
     { url = "https://download-r2.pytorch.org/whl/xpu/torch-2.9.0%2Bxpu-cp314-cp314t-win_amd64.whl", hash = "sha256:c8d59a7aa864d92c9d90e175dce48e4932e2fbc94fee10dd3b6a530432e15909", upload-time = "2025-10-14T17:44:06Z" },
+]
+
+[[package]]
+name = "torchinfo"
+version = "1.8.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/53/d9/2b811d1c0812e9ef23e6cf2dbe022becbe6c5ab065e33fd80ee05c0cd996/torchinfo-1.8.0.tar.gz", hash = "sha256:72e94b0e9a3e64dc583a8e5b7940b8938a1ac0f033f795457f27e6f4e7afa2e9", size = 25880, upload-time = "2023-05-14T19:23:26.377Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/72/25/973bd6128381951b23cdcd8a9870c6dcfc5606cb864df8eabd82e529f9c1/torchinfo-1.8.0-py3-none-any.whl", hash = "sha256:2e911c2918603f945c26ff21a3a838d12709223dc4ccf243407bce8b6e897b46", size = 23377, upload-time = "2023-05-14T19:23:24.141Z" },
 ]
 
 [[package]]

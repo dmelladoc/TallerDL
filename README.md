@@ -46,6 +46,7 @@ Ahora, si utilizan `anaconda` u otro gestor, deben instalar los siguientes paque
 - `pytorch`
 - `torchvision`
 - `torchmetrics`
+- `torchinfo`
 - `tqdm`
 - `medmnist`
 - `kagglehub`
