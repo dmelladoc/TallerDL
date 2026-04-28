@@ -75,6 +75,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--dataset",
         type=str,
+        nargs="+",
         choices=["cats-vs-dogs", "medmnist", "fishes", "all"],
         default="all",
         help="Dataset a descargar. Por defecto, se descargarán todos los datasets.",
